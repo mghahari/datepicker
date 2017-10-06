@@ -180,6 +180,16 @@ DatePicker.prototype.changeYear = function(year) {
 	this.update();
 };
 
+DatePicker.apply = function (elements){
+	if(!elements.hasOwnProperty('length')){
+		return new DatePicker(elements);
+	}else{
+		for (var i = 0; i < elements.length; i++) {
+			new DatePicker(elements[i]);
+		}
+	}
+};
+
 DatePicker.autoInit = function(){
 var elements = M('.datepicker');
 	for (var i = elements.length - 1, element; element = elements[i]; i--) {
