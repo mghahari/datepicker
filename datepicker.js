@@ -24,7 +24,7 @@ DatePicker.prototype.getValue = function() {
 	else
 		//TODO: correct this
 		try{
-			return Jalali.parse(this.input.value);
+			return Jalali.parseDate(this.input.value);
 		}catch(exception){
 			if(this.input.attr('oninvalid') != null)
 				eval.call(this.input, this.input.attr('oninvalid'));
@@ -60,9 +60,6 @@ DatePicker.prototype.launch = function(){
 			alert('تاریخ مورد نظر را انتخاب کنید');
 			return false;	
 		}
-		this.selected.hour = this.datepicker.findS('.timepicker__hour').value;
-		this.selected.minute = this.datepicker.findS('.timepicker__minute').value;
-		this.selected.second = this.datepicker.findS('.timepicker__second').value;
 		this.push();
 		this.unlaunch();
 	}.bind(this));
