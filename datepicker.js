@@ -160,7 +160,7 @@ DatePicker.prototype.yearOptions = function() {
 };
 
 DatePicker.prototype.push = function() {
-	this.input.value = this.selected.toString();
+	this.input.value = this.selected.toStringDate();
 };
 
 DatePicker.prototype.previous = function(){
