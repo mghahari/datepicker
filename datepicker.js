@@ -181,7 +181,7 @@ DatePicker.prototype.changeYear = function(year) {
 };
 
 DatePicker.apply = function (elements){
-	if(!elements.hasOwnProperty('length')){
+	if(typeof elements.length == "undefined"){
 		return new DatePicker(elements);
 	}else{
 		for (var i = 0; i < elements.length; i++) {
