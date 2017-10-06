@@ -133,6 +133,13 @@
 	margin: 0 1rem;
 }
 
+.datepicker-box .datepicker-box__calender th,
+.datepicker-box .datepicker-box__calender td {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
 .datepicker-box .datepicker-box__calender th {
 	font-size: 22px;
     font-weight: 900;
