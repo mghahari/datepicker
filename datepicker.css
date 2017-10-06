@@ -130,6 +130,10 @@
 }
 
 .datepicker-box .datepicker-box__calender {
+	position: absolute;
+    margin: 0 1rem;
+    height: calc(100vh - 1.5em - 66px);
+    width: calc(60% - 2rem);
 	margin: 0 1rem;
 }
 
@@ -147,7 +151,7 @@
 
 .datepicker-box .datepicker-box__calender table {
 	width: 100%;
-	height: calc(100% - 1.5em - 66px);
+	height: 100%;
 }
 
 .datepicker-box .datepicker-box__calender button.selected {
@@ -172,6 +176,9 @@
 }
 
 .datepicker-box .datepicker-box__actions {
+	position: absolute;
+    bottom: 1rem;
+    width: 60%;
 	padding: 0 1rem;
 }
 
@@ -182,7 +189,7 @@
     -webkit-tap-highlight-color: transparent;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-size: .875rem;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: .04em;
     line-height: 2.25rem;
