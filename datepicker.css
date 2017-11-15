@@ -178,7 +178,7 @@
 .datepicker-box .datepicker-box__actions {
 	position: absolute;
     bottom: 1rem;
-    width: 60%;
+    width: calc(60% - 2rem);
 	padding: 0 1rem;
 }
 
